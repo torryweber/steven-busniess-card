@@ -19,7 +19,7 @@ const CARD_URL =
 const contact = {
 
     name:
-        "Steven",
+        "Steven - GST Hardware",
 
     company:
         "GST Hardware Sdn Bhd",
@@ -93,15 +93,17 @@ document
 
                 "VERSION:3.0",
 
-                "FN:Steven",
+                `N:${contact.name};;;;`,
 
-                "ORG:GST Hardware Sdn Bhd",
+                `FN:${contact.name}`,
 
-                "TEL;TYPE=CELL,VOICE:+60122601271",
+                `ORG:${contact.company}`,
 
-                "EMAIL;TYPE=WORK:sales@gsthardware.com.my",
+                `TEL;TYPE=CELL,VOICE:${contact.phone}`,
 
-                "URL:https://www.gsthardware.com.my/",
+                `EMAIL;TYPE=WORK:${contact.email}`,
+
+                `URL:${contact.website}`,
 
                 "END:VCARD"
 
@@ -180,7 +182,6 @@ document
 
         async () => {
 
-
             const shareData = {
 
                 title:
@@ -196,7 +197,6 @@ document
 
 
             try {
-
 
                 /*
                  * Native phone share
@@ -233,7 +233,6 @@ document
 
                 }
 
-
             }
 
             catch (error) {
@@ -241,8 +240,6 @@ document
                 /*
                  * User cancelled
                  * share window.
-                 *
-                 * Do nothing.
                  */
 
             }
