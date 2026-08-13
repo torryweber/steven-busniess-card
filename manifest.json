@@ -1,0 +1,31 @@
+{
+    "name": "Steven | GST Hardware",
+
+    "short_name": "Steven GST",
+
+    "start_url": ".",
+
+    "display": "standalone",
+
+    "background_color": "#f5f8f7",
+
+    "theme_color": "#81D8D0",
+
+    "description": "Digital business card for Steven, GST Hardware Sdn Bhd.",
+
+    "icons": [
+
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+
+    ]
+}
